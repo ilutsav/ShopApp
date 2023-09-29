@@ -98,6 +98,30 @@ class Post {
         "product_colors":
             List<dynamic>.from(productColors.map((x) => x.toJson())),
       };
+  // @override
+  // String toString() {
+  //   return 'Post {'
+  //       '\n  id: $id,'
+  //       '\n  brand: $brand,'
+  //       '\n  name: $name,'
+  //       '\n  price: $price,'
+  //       '\n  priceSign: $priceSign,'
+  //       '\n  currency: $currency,'
+  //       '\n  imageLink: $imageLink,'
+  //       '\n  productLink: $productLink,'
+  //       '\n  websiteLink: $websiteLink,'
+  //       '\n  description: $description,'
+  //       '\n  rating: $rating,'
+  //       '\n  category: $category,'
+  //       '\n  productType: $productType,'
+  //       '\n  tagList: $tagList,'
+  //       '\n  createdAt: $createdAt,'
+  //       '\n  updatedAt: $updatedAt,'
+  //       '\n  productApiUrl: $productApiUrl,'
+  //       '\n  apiFeaturedImage: $apiFeaturedImage,'
+  //       '\n  productColors: $productColors,'
+  //       '\n}';
+  // }
 }
 
 enum Brand { MAYBELLINE }

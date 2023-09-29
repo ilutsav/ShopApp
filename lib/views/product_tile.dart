@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:shopapp/models/product.dart';
 
 class ProductTile extends StatelessWidget {
@@ -31,15 +30,15 @@ class ProductTile extends StatelessWidget {
                 ),
                 Positioned(
                   right: 0,
-                  child: Obx(() => CircleAvatar(
-                        backgroundColor: Colors.white,
-                        child: IconButton(
-                          icon: product.rating != null
-                              ? const Icon(Icons.favorite_rounded)
-                              : const Icon(Icons.favorite_border),
-                          onPressed: () {},
-                        ),
-                      )),
+                  child: CircleAvatar(
+                    backgroundColor: Colors.white,
+                    child: IconButton(
+                      icon: product.rating != null
+                          ? const Icon(Icons.favorite_rounded)
+                          : const Icon(Icons.favorite_border),
+                      onPressed: () {},
+                    ),
+                  ),
                 )
               ],
             ),
@@ -47,8 +46,8 @@ class ProductTile extends StatelessWidget {
             Text(
               product.name,
               maxLines: 2,
-              style:
-                  const TextStyle(fontFamily: 'avenir', fontWeight: FontWeight.w800),
+              style: const TextStyle(
+                  fontFamily: 'avenir', fontWeight: FontWeight.w800),
               overflow: TextOverflow.ellipsis,
             ),
             const SizedBox(height: 8),
